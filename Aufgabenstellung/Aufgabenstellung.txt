@@ -1,0 +1,7 @@
+2 x Digital Input
+2 x Digital Output
+min. 1 x Sensor (I2C, SPI, 1Wire)
+min. 1 x File (Lesen oder schreiben)
+
+Bsp. |Distance Meter|   Ultraschall Sensor, Distance kann man mit knöpfen einstellen, Daten werden in File geschrieben
+
