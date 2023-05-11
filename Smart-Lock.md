@@ -12,3 +12,15 @@ Peripherie: [Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az
 Quellen:
 + [RFID](https://edistechlab.com/rfid-reader-rc522-einfach-erklart/?v=fa868488740a)
 
+
+Verkabelung:
+| RC522 Pin  | RC522 Name | Raspberry Pi Pin  | Raspberry Pi Name |  
+| ------------- | ------------- | ------------- | ------------- |
+| 1  | VCC  | 1  | 3.3V  |
+| 2  | RST  | 22  | GPIO 25  |
+| 3  | GND  | 6  | GND  |
+| 4  | IRQ  | -  | -  |
+| 5  | MISO  | 21  | GPIO 9  |
+| 6  | MOSI  | 19  | GPIO 10  |
+| 7  | SCK  | 23  | GPIO 11  |
+| 8  | NSS  | 24  | GPIO 8  |
