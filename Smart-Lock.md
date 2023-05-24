@@ -11,6 +11,7 @@ Peripherie: [Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az
 
 Quellen:
 + [RFID](https://edistechlab.com/rfid-reader-rc522-einfach-erklart/?v=fa868488740a)
++ [RFID](https://tutorials-raspberrypi.de/raspberry-pi-rfid-rc522-tueroeffner-nfc/)
 
 
 Verkabelung:
