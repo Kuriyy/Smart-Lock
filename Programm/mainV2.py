@@ -1,5 +1,7 @@
-#!/usr/bin/env python
-# -*- coding: utf8 -*-
+#!/usr/bin/python3
+#coding utf-8
+#Robert Pressl
+#V1
  
 import RPi.GPIO as GPIO
 import MFRC522
