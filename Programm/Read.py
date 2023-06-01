@@ -12,21 +12,28 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(22, GPIO.OUT)
 GPIO.output(22, GPIO.HIGH)
 
+Liste_Berechtigung= [907877716377, 565115594038]
+
+
 reader = SimpleMFRC522()
-while True:
-        GPIO.setmode(GPIO.BCM)
-        GPIO.setup(17, GPIO.OUT)
-        GPIO.setup(22, GPIO.OUT)
-        try:
+try:
+        while True:
+                GPIO.setmode(GPIO.BCM)
+                GPIO.setup(17, GPIO.OUT)
+                GPIO.setup(22, GPIO.OUT)
                 id, text = reader.read()
                 timestamp = datetime.datetime.now()
                 print(str(id) + " " + str(text) + " " + str(timestamp))
-
-        finally:
-                GPIO.output(17, GPIO.HIGH)
-                GPIO.output(22, GPIO.LOW)
-                time.sleep(4)
-                GPIO.output(17, GPIO.LOW)
-                GPIO.output(22, GPIO.HIGH)
-                GPIO.cleanup()
+                if id in Liste_Berechtigung:
+                        GPIO.output(17, GPIO.HIGH)
+                        GPIO.output(22, GPIO.LOW)
+                        time.sleep(3)
+                        GPIO.output(17, GPIO.LOW)
+                        GPIO.output(22, GPIO.HIGH)
+                        GPIO.cleanup()
+                else:
+                        time.sleep(2)
+except KeyboardInterrupt:
+        GPIO.output(22, GPIO.LOW)
+        GPIO.cleanup()
 
