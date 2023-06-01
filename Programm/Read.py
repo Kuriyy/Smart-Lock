@@ -5,12 +5,16 @@
 
 import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
+import time
+import datetime
+
 
 reader = SimpleMFRC522()
-
-try:
-        id, text = reader.read()
-        print(id)
-        print(text)
-finally:
-        GPIO.cleanup()
+while True:
+        try:
+                id, text = reader.read()
+                timestamp = datetime.datetime.now()
+                print(str(id) + " " + str(text) + " " + str(timestamp))
+        finally:
+                time.sleep(2)
+                GPIO.cleanup()
