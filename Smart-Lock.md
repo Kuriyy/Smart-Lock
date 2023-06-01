@@ -7,7 +7,7 @@ Peripherie: [Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az
 - [x] Es soll mit einem RFID Sensor eine Tür geöffent(Statt einem Schloss sollen die LED's eingebaut werden) werden.
 - [ ] Innerhalb der Tür ist ein Taster damit man die Tür von innen öffnen kann.
 - [x] 2 LED's sollen anzeigen, ob die Tür offen oder geschlossen ist.
-- [ ] Es sollen in ein File gespeichert werden, welche Person wann die Tür geöffent hat.
+- [x] Es sollen in ein File gespeichert werden, welche Person wann die Tür geöffent hat.
 
 Quellen:
 + [RFID](https://edistechlab.com/rfid-reader-rc522-einfach-erklart/?v=fa868488740a)
