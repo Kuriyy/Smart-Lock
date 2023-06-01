@@ -25,3 +25,8 @@ Verkabelung:
 | 6  | MOSI  | 19  | GPIO 10  |
 | 7  | SCK  | 23  | GPIO 11  |
 | 8  | NSS  | 24  | GPIO 8  |
+
+| LED | Raspberry Pi (GPIO)  | Raspberry Pi Name |  
+| ------------- | ------------- | ------------- |
+| ROT  | 22 | GPIO 22 |
+| GRÜN  | 17  | GPIO 17  |
