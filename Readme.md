@@ -67,6 +67,7 @@ Die LED's wurden dann noch von 22 und 17 zu GND gesetzt(kann man ihm Programm um
 ## Programm
 
 Dieses Programm ist ein Leseprogramm für RFID-Karten oder Tags. Es liest die Daten von RFID-Karten und speichert sie in einer CSV-Datei für die Türüberwachung. Es überprüft auch, ob die Karten autorisiert sind, und ermöglicht den Zugang basierend auf einer Liste von berechtigten IDs.
+
 ### Read.py
 ```python
 #!/usr/bin/python3
@@ -157,4 +158,26 @@ except KeyboardInterrupt:
     # Öffne die Datei und schreibe eine neue Zeile
     with open("Door_surveillance_" + filename + ".cvs", "a") as file1:
         file1.write("\n")
+```
+
+### Write.py
+```python
+#!/usr/bin/python3
+#coding utf-8
+#Robert Pressl
+#V1
+
+import RPi.GPIO as GPIO
+from mfrc522 import SimpleMFRC522
+
+# RFID-Leser initialisieren
+reader = SimpleMFRC522()
+
+try:
+    text = input('New data:')  # Eingabeaufforderung für neue Daten
+    print("Now place your tag to write")
+    reader.write(text)  # RFID-Karte beschreiben
+    print("Written")
+finally:
+    GPIO.cleanup()
 ```
