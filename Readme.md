@@ -24,8 +24,11 @@ Teilaufgaben:
 
 Ich verwende als digitalen Eingang ein RFID-Lesegerät. Über den digitalen Ausgang steuere ich LEDs, um den Status des elektronischen Schlosses anzuzeigen. Alle Ereignisse, wie das Öffnen und Schließen der Tür, werden in einer Datei gespeichert. Mit diesen Daten analysiere ich, wer zu welcher Zeit die Tür betritt oder verlässt.
 
+RFID-Chips:
+Die RFID-Chips werden den Personen zugeordnet, die Zugang zum Smart-Lock haben sollen. Jeder autorisierten Person wird ein eindeutiger RFID-Chip zugewiesen, der vom RFID-Lesegerät erkannt wird. Dies ermöglicht eine zuverlässige Identifikation und Gewährleistung der Zugangskontrolle.
+
 ## Peripherie
-Die benötigte Peripherie für das System umfasst eine, [RFID Sensor](https://www.az-delivery.de/products/rfid-set), [RFID Chips](https://www.az-delivery.de/products/13-56mhz-transponder?variant=38522275218), Raspi, Knopf, LED's
+Die benötigte Peripherie für das System umfasst ein, [RFID Sensor](https://www.az-delivery.de/products/rfid-set), [RFID Chips](https://www.az-delivery.de/products/13-56mhz-transponder?variant=38522275218), Raspi, Knopf, LED's
 
 ## Do-To-List
 - [x] Es soll mit einem RFID Sensor eine Tür geöffent(Statt einem Schloss sollen die LED's eingebaut werden) werden.
@@ -34,8 +37,9 @@ Die benötigte Peripherie für das System umfasst eine, [RFID Sensor](https://ww
 - [x] Es sollen in ein File gespeichert werden, welche Person wann die Tür geöffent hat.
 
 ## Quellen
-+ [RFID](https://edistechlab.com/rfid-reader-rc522-einfach-erklart/?v=fa868488740a)
-+ [RFID](https://tutorials-raspberrypi.de/raspberry-pi-rfid-rc522-tueroeffner-nfc/)
++ [RFID-Reader RC522](https://edistechlab.com/rfid-reader-rc522-einfach-erklart/?v=fa868488740a): In diesem Artikel wird der RFID-Reader RC522 einfach und verständlich erklärt.
++ [Tutorial: Raspberry Pi RFID-RC522 Türöffner mit NFC](https://tutorials-raspberrypi.de/raspberry-pi-rfid-rc522-tueroeffner-nfc/): Auf dieser Website gibt es ein hilfreiches Tutorial, das erklärt, wie man den RFID-RC522 mit dem Raspberry Pi verwendet, um Türen zu öffnen und die NFC-Funktionalität zu nutzen.
+
 
 
 ## Verkabelung
@@ -54,3 +58,6 @@ Die benötigte Peripherie für das System umfasst eine, [RFID Sensor](https://ww
 | ------------- | ------------- | ------------- |
 | ROT  | 22 | GPIO 22 |
 | GRÜN  | 17  | GPIO 17  |
+
+
+
