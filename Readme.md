@@ -66,8 +66,8 @@ Die LED's wurden dann noch von 22 und 17 zu GND gesetzt(kann man ihm Programm um
 
 ## Programm
 
-Dieses Programm ist ein Leseprogramm für RFID-Karten oder Tags. Es liest die Daten von RFID-Karten und speichert sie in einer CSV-Datei für die Türüberwachung. Es überprüft auch, ob die Karten autorisiert sind, und ermöglicht den Zugang basierend auf einer Liste von berechtigten IDs. Es ist eine praktische Möglichkeit, den Zugriff auf Türen zu überwachen und Informationen wie ID, Name, Zeit und Autorisierung zu protokollieren.
-
+Dieses Programm ist ein Leseprogramm für RFID-Karten oder Tags. Es liest die Daten von RFID-Karten und speichert sie in einer CSV-Datei für die Türüberwachung. Es überprüft auch, ob die Karten autorisiert sind, und ermöglicht den Zugang basierend auf einer Liste von berechtigten IDs.
+### Read.py
 ```python
 #!/usr/bin/python3
 #coding utf-8
