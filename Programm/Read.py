@@ -3,29 +3,34 @@
 #Robert Pressl
 #V1
 
+# Importiere benötigte Bibliotheken
 import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
 import time
 import datetime
 import Passwort
 
-
+# GPIO-Pins konfigurieren
 GPIO.setmode(GPIO.BCM)
 GPIO.setup(22, GPIO.OUT)
 GPIO.output(22, GPIO.HIGH)
+# Dateiname basierend auf dem aktuellen Datum und Uhrzeit erstellen
+# RFID-Reader initialisieren
 filename = datetime.datetime.now().strftime("%d_%m_%Y")
 reader = SimpleMFRC522()
 
 try:
+        # Datei öffnen und Tabellenkopf schreiben
         with open("Door_surveillance_" + filename + ".cvs", "a") as file:
                         file.write("|------------|------------------------------------------------|-------------------|-------------|\n")
                         file.write("|     ID     |                     NAME                       |        TIME       |  AUTHORITY  |\n")
                         file.write("|------------|------------------------------------------------|-------------------|-------------|\n")
-
+         # Endlosschleife, die die Türüberwachung durchführt
         while True:
                 GPIO.setmode(GPIO.BCM)
                 GPIO.setup(17, GPIO.OUT)
                 GPIO.setup(22, GPIO.OUT)
+                 # RFID-Karte lesen
                 id, text = reader.read()
                 if text == "^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@":
                         text = "0" * 48

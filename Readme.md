@@ -64,5 +64,46 @@ Die benötigte Peripherie für das System umfasst ein, [RFID Sensor](https://www
 
 Die LED's wurden dann noch von 22 und 17 zu GND gesetzt(kann man ihm Programm umändern).
 
+## Programm
 
+```python
+#!/usr/bin/python3
+#coding utf-8
+#Robert Pressl
+#V1
 
+# Importiere benötigte Bibliotheken
+import RPi.GPIO as GPIO
+from mfrc522 import SimpleMFRC522
+import time
+import datetime
+import Passwort
+```
+
+```python
+# GPIO-Pins konfigurieren
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(22, GPIO.OUT)
+GPIO.output(22, GPIO.HIGH)
+# Dateiname basierend auf dem aktuellen Datum und Uhrzeit erstellen
+# RFID-Reader initialisieren
+filename = datetime.datetime.now().strftime("%d_%m_%Y")
+reader = SimpleMFRC522()
+```
+
+```python
+try:
+        # Datei öffnen und Tabellenkopf schreiben
+        with open("Door_surveillance_" + filename + ".cvs", "a") as file:
+                        file.write("|------------|------------------------------------------------|-------------------|-------------|\n")
+                        file.write("|     ID     |                     NAME                       |        TIME       |  AUTHORITY  |\n")
+                        file.write("|------------|------------------------------------------------|-------------------|-------------|\n")
+```
+
+```python
+         # Endlosschleife, die die Türüberwachung durchführt
+        while True:
+                GPIO.setmode(GPIO.BCM)
+                GPIO.setup(17, GPIO.OUT)
+                GPIO.setup(22, GPIO.OUT)
+```
