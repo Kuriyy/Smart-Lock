@@ -39,7 +39,6 @@ try:
         # Lese die ID und den Text vom RFID-Lesegerät
         id, text = reader.read()
 
-        # Überprüfe, ob der Text ein spezielles Muster ist und setze ihn auf einen Standardwert, falls ja
         if text == "^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@":
             text = "0" * 48
 
