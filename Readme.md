@@ -22,10 +22,10 @@ Teilaufgaben:
 
 # Smart-Lock
 
-Ich verwende die digitalen Eingänge, um einen Türsensor und eine Tastatur oder ein RFID-Lesegerät anzuschließen. Mit den digitalen Ausgängen könnte ich ein elektronisches Schloss steuern(Es werden aber LED's verwendet). Ich speichere Ereignisse wie das Öffnen und Schließen der Tür oder das Entfernen von RFID-Karten in einer Datei. Mit diesen Daten kann ich nachschauen, wer wann die Tür betritt oder verlässt.
+Ich verwende als digitalen Eingang ein RFID-Lesegerät. Über den digitalen Ausgang steuere ich LEDs, um den Status des elektronischen Schlosses anzuzeigen. Alle Ereignisse, wie das Öffnen und Schließen der Tür, werden in einer Datei gespeichert. Mit diesen Daten analysiere ich, wer zu welcher Zeit die Tür betritt oder verlässt.
 
-## Peripherie:
-[Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az-delivery.de/products/rfid-set), [RFID Chips](https://www.az-delivery.de/products/13-56mhz-transponder?variant=38522275218), Raspi, Knopf, LED's
+## Peripherie
+Die benötigte Peripherie für das System umfasst eine, [Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az-delivery.de/products/rfid-set), [RFID Chips](https://www.az-delivery.de/products/13-56mhz-transponder?variant=38522275218), Raspi, Knopf, LED's
 
 ## Do-To-List
 - [x] Es soll mit einem RFID Sensor eine Tür geöffent(Statt einem Schloss sollen die LED's eingebaut werden) werden.
