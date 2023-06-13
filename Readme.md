@@ -159,11 +159,11 @@ except KeyboardInterrupt:
     with open("Door_surveillance_" + filename + ".cvs", "a") as file1:
         file1.write("\n")
 ```
-Here is a simple flow chart:
+### Programmablaufplan von Write.py:
 
 ```mermaid
-graph TD;
-    A-->B;
+graph LR;
+    A[Start]-->B[Open File]
     A-->C;
     B-->D;
     C-->D;
