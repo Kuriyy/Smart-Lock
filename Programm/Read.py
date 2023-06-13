@@ -27,6 +27,8 @@ try:
                 GPIO.setup(17, GPIO.OUT)
                 GPIO.setup(22, GPIO.OUT)
                 id, text = reader.read()
+                if text == "^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@":
+                        text = "0" * 48
                 timestamp = datetime.datetime.now().strftime("%d.%m.%Y %X")
                 print(str(id) + " " + str(text) + " " + str(timestamp))
                 
