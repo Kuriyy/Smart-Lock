@@ -164,9 +164,9 @@ except KeyboardInterrupt:
 ```mermaid
 graph LR;
     A[Start]-->B[Open File]
-    A-->C;
-    B-->D;
-    C-->D;
+    B-->C[Check for RFID-Chip]
+    C--|yes|D[Get Data from Chip]
+    C--|no|C
 ```
 
 
