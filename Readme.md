@@ -165,8 +165,9 @@ except KeyboardInterrupt:
 graph LR;
     A[Start]-->B[Open File]
     B-->C[Check for RFID-Chip]
-    C--|yes|D[Get Data from Chip]
-    C--|no|C
+    C--|Yes| D[Get Data from Chip]
+    C--|no| E[Loop]
+    E-->C
 ```
 
 
