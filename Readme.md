@@ -60,4 +60,7 @@ Die benötigte Peripherie für das System umfasst ein, [RFID Sensor](https://www
 | GRÜN  | 17  | GPIO 17  |
 
 
+![Verkabelung](https://tutorials-raspberrypi.de/wp-content/uploads/2016/04/Raspberry-Pi-RFID-RC522-NFC_Steckplatine.png)
+
+
 
