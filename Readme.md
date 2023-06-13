@@ -167,6 +167,9 @@ graph LR;
     B -->|No| D[Loop]
     D --> B
     B ---->|Yes| E[Get Data]
+    E --> F[Save in .cvs]
+    F --> G[Activate LED's]
+    G -->|Loop| B
 ```
 
 
