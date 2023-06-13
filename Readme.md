@@ -22,16 +22,18 @@ Teilaufgaben:
 
 # Smart-Lock
 
-Verwenden Sie die digitalen Eingänge, um einen Türsensor und eine Tastatur oder ein RFID-Lesegerät anzuschließen. Verwenden Sie die digitalen Ausgänge, um ein elektronisches Schloss zu steuern. Speichern Sie Ereignisse wie das Öffnen und Schließen der Tür oder das Entfernen von RFID-Karten in einer Datei. Verwenden Sie diese Daten, um zu analysieren, wer wann die Tür betritt oder verlässt.
+Ich verwende die digitalen Eingänge, um einen Türsensor und eine Tastatur oder ein RFID-Lesegerät anzuschließen. Mit den digitalen Ausgängen könnte ich ein elektronisches Schloss steuern(Es werden aber LED's verwendet). Ich speichere Ereignisse wie das Öffnen und Schließen der Tür oder das Entfernen von RFID-Karten in einer Datei. Mit diesen Daten kann ich nachschauen, wer wann die Tür betritt oder verlässt.
 
-Peripherie: [Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az-delivery.de/products/rfid-set), [RFID Chips](https://www.az-delivery.de/products/13-56mhz-transponder?variant=38522275218), Raspi, Knopf, LED's
+## Peripherie: 
+[Planzeichnung](https://fritzing.org/), [RFID Sensor](https://www.az-delivery.de/products/rfid-set), [RFID Chips](https://www.az-delivery.de/products/13-56mhz-transponder?variant=38522275218), Raspi, Knopf, LED's
 
+## Do-To-List:
 - [x] Es soll mit einem RFID Sensor eine Tür geöffent(Statt einem Schloss sollen die LED's eingebaut werden) werden.
 - [ ] Innerhalb der Tür ist ein Taster damit man die Tür von innen öffnen kann.
 - [x] 2 LED's sollen anzeigen, ob die Tür offen oder geschlossen ist.
 - [x] Es sollen in ein File gespeichert werden, welche Person wann die Tür geöffent hat.
 
-Quellen:
+## Quellen:
 + [RFID](https://edistechlab.com/rfid-reader-rc522-einfach-erklart/?v=fa868488740a)
 + [RFID](https://tutorials-raspberrypi.de/raspberry-pi-rfid-rc522-tueroeffner-nfc/)
 
