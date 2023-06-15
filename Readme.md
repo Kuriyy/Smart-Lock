@@ -64,6 +64,29 @@ Die benötigte Peripherie für das System umfasst ein, [RFID Sensor](https://www
 
 Die LED's wurden dann noch von 22 und 17 über einen Vorwiderstand von 1kOhm zu GND gesetzt(kann man ihm Programm umändern).
 
+## SPI
+Zuerst muss noch SPI aktiviert werden.
+Mit dem Befehl, kommt man in das Konfigurationsmenü vom Raspi:
+```
+sudo raspi-config
+```
+Nun muss man auf "Interface Options".
+Nun wählt man SPI aus und aktiviert es.
+Ein Reboot ist erforderlich!
+```
+sudo reboot
+```
+## Libarys
+Es gibt zwei Libary die noch nicht auf dem Raspi installiert wurde
+Geben Sie diese codes in der CMD ein:
+```
+sudo pip install mfrc522
+```
+```
+sudo pip install RPi.GPIO
+```
+
+
 ## Programm
 
 Dieses Programm ist ein Leseprogramm für RFID-Karten oder Tags. Es liest die Daten von RFID-Karten und speichert sie in einer CSV-Datei für die Türüberwachung. Es überprüft auch, ob die Karten autorisiert sind, und ermöglicht den Zugang basierend auf einer Liste von berechtigten IDs.
