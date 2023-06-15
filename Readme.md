@@ -218,3 +218,12 @@ try:
 finally:
     GPIO.cleanup()
 ```
+### Passwort.py
+
+In dem Passwort file sind id's von den Chips drinnen die Berechtigungen haben.
+Füge hier deinen Chip ein wenn er berechtigung haben soll.
+Alle anderen Chips werden vom System verweigert
+
+```python
+Liste_Berechtigung= [907877716377, 565115594038]
+```
