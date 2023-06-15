@@ -227,3 +227,15 @@ Alle anderen Chips werden vom System verweigert
 ```python
 Liste_Berechtigung= [907877716377, 565115594038]
 ```
+
+### Typische Ausgabe
+Hier sehen Sie wie es dann in der CSV-Datei ausschauen wird
+```
+|------------|------------------------------------------------|-------------------|-------------|
+|     ID     |                     NAME                       |        TIME       |  AUTHORITY  |
+|------------|------------------------------------------------|-------------------|-------------|
+|907877716377|Robert Pressl                                   |15.06.2023 12:51:44|     yes     |
+|523970010448|Unbekannt                                       |15.06.2023 12:51:50|      no     |
+|565115594038|Marcel Poigenfuerst                             |15.06.2023 12:51:53|     yes     |
+```
+Es wird die ID angezeigt, der Name der Person, um welche Urzeit und am welchen Tag und ob diese Person autorisiert war.
