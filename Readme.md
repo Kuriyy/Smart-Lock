@@ -111,10 +111,11 @@ try:
         # Lese die ID und den Text vom RFID-Lesegerät
         id, text = reader.read()
 
-        if text == "^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@":
-            text = "0" * 48
+        hex_representation = text.encode('utf-8').hex()
+        if hex_representation == "000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000":
+            text = "Unbekannt                                       "
 
-        # Aktuelle Zeitstempel erstellen
+        # Aktuelle Zeitstempel erstellen    
         timestamp = datetime.datetime.now().strftime("%d.%m.%Y %X")
 
         # Drucke die ID, den Text und den Zeitstempel
