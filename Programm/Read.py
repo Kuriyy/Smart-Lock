@@ -39,7 +39,7 @@ try:
         # Lese die ID und den Text vom RFID-Lesegerät
         id, text = reader.read()
 
-        if text == "^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@^@":
+        if text == "":
             text = "0" * 48
 
         # Aktuelle Zeitstempel erstellen
